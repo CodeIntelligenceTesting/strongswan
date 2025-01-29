@@ -55,3 +55,9 @@ coverage/
 /*.includes
 test-driver
 nbproject/
+
+lcov.info
+.cifuzz*/
+.sarif/
+.vscode/
+compile_commands.json

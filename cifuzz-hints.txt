@@ -1,0 +1,11 @@
+This project is a C project and does not support the FuzzedDataProvider. Do not
+include it in any fuzz tests.
+
+For many functions the `library_init` should be called once at the start. E.g.
+inside the `FUZZ_TEST_SETUP` like this:
+
+```
+FUZZ_TEST_SETUP() {
+    library_init(NULL, "fuzzing");
+}
+```
